@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Kolker+Brush&family=Montserrat&family=Oxygen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Island+Moments&display=swap');
+/* 
+font-family: 'Montserrat', sans-serif;
+font-family: 'Oxygen', sans-serif;
+font-family: 'Island Moments', cursive;
+ */
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    padding: 1rem;
+}
+.header h1 {
+    color: white;
+}
+.nav__menu{
+    display: flex;
+    gap: 2rem;
+}
+.nav__menu a{
+    color: white;
+    font-family: 'Oxygen', sans-serif;
+}
+.hero__main {
+    padding: 0 5rem;
+    background: url("../img/old-black-background-grunge-texture-dark-wallpaper-blackboard-chalkboard-room-wall_1258-28312.webp") no-repeat fixed center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    place-items: center;
+}
+.hero__main img{
+    width: 50%;
+    flex: 1;
+    filter: drop-shadow(8px 8px 10px black);
+}
+.main__left{
+    flex: 1;
+    gap: 2rem;
+}
+.main__left h1 {
+    font-size: 10rem;
+    font-family: 'Island Moments', cursive;
+    color: white;
+}
+.main__left p{
+    color: rgba(255, 204, 65, 0.719);
+    font-family: 'Oxygen', sans-serif;
+    padding-bottom: 2rem;
+    font-style: italic;
+}
+.main__left a{
+    background-color: white;
+    border-radius: 0.75rem;
+    color: rgb(26, 26, 26);
+    padding: 0.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+}
+.footer{
+    display: flex;
+    padding: 1rem;
+    
+}
+.footer p{
+    font-family: 'Oxygen', sans-serif;
+}
+.footer a{
+    color: black;
+    font-family: 'Oxygen', sans-serif;
+}
+.footer__content1{
+    flex: 1;
+    place-items: center center;
+}
+.footer__content1 h2{
+    font-family: 'Island Moments', cursive;
+    font-size: 3.5rem;
+}
+.footer__content1 p{
+    font-family: 'Oxygen', sans-serif;
+    max-width: 80%;
+}
+.footer__content2{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 1rem;
+    place-items: center;
+}
+.footer__content3{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    padding: 1rem;
+    font-size: 2rem;
+    flex: 1;
+}
+.footer__row{
+    display: flex;
+    gap: 1rem;
+    padding: 0.5rem;
+}
+.hero__main img {
+    animation: rotate 3s infinite alternate;
+}
+@keyframes rotate {
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(10deg);}
+}
