@@ -70,13 +70,14 @@ font-family: 'Island Moments', cursive;
 .footer{
     display: flex;
     padding: 1rem;
-    
+    background: url("../img/fondopizza.png") no-repeat center fixed;
+    background-size: cover;
 }
 .footer p{
     font-family: 'Oxygen', sans-serif;
 }
 .footer a{
-    color: black;
+    color: white;
     font-family: 'Oxygen', sans-serif;
 }
 .footer__content1{
@@ -86,10 +87,12 @@ font-family: 'Island Moments', cursive;
 .footer__content1 h2{
     font-family: 'Island Moments', cursive;
     font-size: 3.5rem;
+    color: white;
 }
 .footer__content1 p{
     font-family: 'Oxygen', sans-serif;
     max-width: 80%;
+    color: white;
 }
 .footer__content2{
     display: flex;
@@ -120,4 +123,122 @@ font-family: 'Island Moments', cursive;
 @keyframes rotate {
     0%{transform: rotate(0deg);}
     100%{transform: rotate(10deg);}
+}
+.hero__menu {
+    background: url("../img/fondo_menu.png") no-repeat center fixed;
+    background-size: cover;
+}
+.menu__top {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    padding: 5rem;
+}
+.menu__top p {
+    font-family: 'Oxygen', sans-serif;
+    opacity: 90%; 
+    font-size: 2rem;
+    color: white;
+}
+.menu__top h2 {
+    font-family: 'Island Moments', cursive;
+    color: rgb(255, 204, 65);
+    font-size: 10rem;
+}
+.menu__menu{
+    display: flex;
+    gap: 1rem;
+    padding: 5rem;
+}
+.menu__item{
+    flex: 1;
+    display: flex;
+    place-items: center;
+    flex-direction: column;
+} 
+.menu__item img {
+    width: 100%;
+    filter: drop-shadow(8px 8px 10px black);
+}
+.menu__item h3{
+    font-family: 'Oxygen', sans-serif;
+    font-size: 1.2rem;
+    color: white;
+}
+.menu__top{
+    height: 25vh;
+}
+.menu__item a{
+    background-color: rgb(228, 172, 19);
+    font-family: 'Oxygen', sans-serif;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    margin-top: 0.5rem;
+    cursor: pointer;
+}
+.pizza__titles{
+    background-color: rgb(180, 136, 15);
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    place-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.pizza__titles h3{
+    color: white;
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+}
+.pizza__titles h3 span{
+   color: rgb(228, 172, 19);
+   font-size: 1.5rem;
+}
+.pizza__titles p{
+    font-family: 'Oxygen', sans-serif;
+    color: white;
+}
+.pizza__cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 5rem;
+    gap: 2rem;
+}
+.pizza__card{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+}
+.pizza__card img{
+    width: 100%;
+    transition: filter 250ms;
+}
+.pizza__card img:hover{
+    filter: saturate(120%);
+}
+.pizza__card h3{
+    color: rgb(228, 172, 19);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+}
+.pizza__card p{
+    font-family: 'Oxygen', sans-serif;
+    color: #202020;
+}
+.pizza__card a{
+    font-family: "Oxygen", sans-serif;
+    margin: 1rem 0rem 1rem;
+    background-color: rgb(228, 172, 19);
+    border: 1px solid transparent;
+    border-radius: 0.5rem;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    width: fit-content;
+}
+.pizza__main{
+    background-color: rgb(230, 230, 230);
 }
